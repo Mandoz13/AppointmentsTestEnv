@@ -61,7 +61,7 @@ window.FrontendBook = window.FrontendBook || {};
             window.console = function () {
             }; // IE compatibility
         }
-        
+
         if (GlobalVariables.displayCookieNotice) {
             cookieconsent.initialise({
                 palette: {
@@ -163,11 +163,11 @@ window.FrontendBook = window.FrontendBook || {};
 
             $selectService.trigger('change'); // Load the available hours.
 
-            // Check if a specific provider was selected. 
+            // Check if a specific provider was selected.
             var selectedProviderId = GeneralFunctions.getUrlParameter(location.href, 'provider');
 
             if (selectedProviderId && $selectProvider.find('option[value="' + selectedProviderId + '"]').length === 0) {
-                // Select a service of this provider in order to make the provider available in the select box. 
+                // Select a service of this provider in order to make the provider available in the select box.
                 for (var index in GlobalVariables.availableProviders) {
                     var provider = GlobalVariables.availableProviders[index];
 
@@ -524,11 +524,11 @@ window.FrontendBook = window.FrontendBook || {};
         // Customer Details
         var firstName = GeneralFunctions.escapeHtml($('#first-name').val());
         var lastName = GeneralFunctions.escapeHtml($('#last-name').val());
-        var phoneNumber = GeneralFunctions.escapeHtml($('#phone-number').val());
+        var phoneNumber = GeneralFunctions.escapeHtml($('').val());
         var email = GeneralFunctions.escapeHtml($('#email').val());
         var address = GeneralFunctions.escapeHtml($('#address').val());
-        var city = GeneralFunctions.escapeHtml($('#city').val());
-        var zipCode = GeneralFunctions.escapeHtml($('#zip-code').val());
+        var city = GeneralFunctions.escapeHtml($('#zip-code').val());
+        var zipCode = GeneralFunctions.escapeHtml($('#city').val());
 
         html =
             '<h4>' + firstName + ' ' + lastName + '</h4>' +

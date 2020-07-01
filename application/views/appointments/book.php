@@ -278,7 +278,7 @@
                     </div>
 
                     <div class="command-buttons">
-                        <button type="button" id="button-back-3" class="btn button-back btn-default"
+                        <button type="button" id="button-back-3" class="btn button-back btn-default btn-lg"
                                 data-step_index="3"><span class="glyphicon glyphicon-backward"></span>
                             <?= lang('back') ?>
                         </button>
@@ -321,7 +321,7 @@
                             <?= lang('back') ?>
                         </button>
                         <form id="book-appointment-form" style="display:inline-block" method="post">
-                            <button id="book-appointment-submit" type="button" class="btn btn-success">
+                            <button id="book-appointment-submit" type="button" class="btn btn-danger">
                                 <span class="glyphicon glyphicon-ok"></span>
                                 <?= !$manage_mode ? lang('confirm') : lang('update') ?>
                             </button>
