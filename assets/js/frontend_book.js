@@ -524,11 +524,11 @@ window.FrontendBook = window.FrontendBook || {};
         // Customer Details
         var firstName = GeneralFunctions.escapeHtml($('#first-name').val());
         var lastName = GeneralFunctions.escapeHtml($('#last-name').val());
-        var phoneNumber = GeneralFunctions.escapeHtml($('').val());
+        var phoneNumber = GeneralFunctions.escapeHtml($('#phone-number').val());
         var email = GeneralFunctions.escapeHtml($('#email').val());
         var address = GeneralFunctions.escapeHtml($('#address').val());
-        var city = GeneralFunctions.escapeHtml($('#zip-code').val());
-        var zipCode = GeneralFunctions.escapeHtml($('#city').val());
+        var city = GeneralFunctions.escapeHtml($('#city').val());
+        var zipCode = GeneralFunctions.escapeHtml($('#zip-code').val());
 
         html =
             '<h4>' + firstName + ' ' + lastName + '</h4>' +
@@ -554,10 +554,10 @@ window.FrontendBook = window.FrontendBook || {};
             last_name: $('#last-name').val(),
             first_name: $('#first-name').val(),
             email: $('#email').val(),
-            phone_number: $('#phone-number').val(),
+            phone_number: $('').val(),
             address: $('#address').val(),
-            city: $('#city').val(),
-            zip_code: $('#zip-code').val()
+            city: $('#zip-code').val(),
+            zip_code: $('#city').val()
         };
 
         postData.appointment = {
