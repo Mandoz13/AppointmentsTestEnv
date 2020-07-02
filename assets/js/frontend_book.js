@@ -554,10 +554,10 @@ window.FrontendBook = window.FrontendBook || {};
             last_name: $('#last-name').val(),
             first_name: $('#first-name').val(),
             email: $('#email').val(),
-            phone_number: $('').val(),
-            address: $('#address').val(),
-            city: $('#zip-code').val(),
-            zip_code: $('#city').val()
+            phone_number: $('#phone-number').val(),
+            address: $('#city').val(),
+            city: $('#address').val(),
+            zip_code: $('').val()
         };
 
         postData.appointment = {
@@ -638,8 +638,8 @@ window.FrontendBook = window.FrontendBook || {};
             $('#first-name').val(customer.first_name);
             $('#email').val(customer.email);
             $('#phone-number').val(customer.phone_number);
-            $('#address').val(customer.address);
-            $('#city').val(customer.city);
+            $('#address').val(customer.city);
+            $('#city').val(customer.address);
             $('#zip-code').val(customer.zip_code);
             var appointmentNotes = (appointment.notes !== null)
                 ? appointment.notes : '';
